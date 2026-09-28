@@ -52,8 +52,8 @@
         margin-bottom: 20px;
 
         .ball-group {
-            gap: 8px;
-            padding: 8px;
+            gap: 10px;
+            padding: 10px;
 
             h2 {
                 font-size: 22px;
@@ -61,7 +61,7 @@
 
             ul {
                 grid-template-columns: repeat(2, 1fr);
-                gap: 4px;
+                gap: 6px;
 
                 li {
                     width: 24px;
