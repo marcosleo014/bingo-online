@@ -10,9 +10,9 @@ numbers.forEach((number) => {
             event.target.style.opacity = 0.1
         } else {
             event.target.style.opacity = 1
-        }
-    }
-})
+        };
+    };
+});
 
 window.onload = () => {
     const B = generateList(1);

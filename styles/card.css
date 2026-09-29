@@ -40,7 +40,10 @@
         }
     }
 
-    .B, .I, .N, .G {
+    .B,
+    .I,
+    .N,
+    .G {
         border-right: 1px solid #94A3B8;
     }
 }
@@ -49,4 +52,33 @@
     background-color: transparent;
     object-fit: cover;
     cursor: auto;
+}
+
+@media (width < 1280px) {
+    .card {
+        article {
+            padding: 6px 4px 4px;
+
+            h2 {
+                font-size: 20px;
+            }
+
+            ul {
+                gap: 4px;
+
+                li {
+                    font-size: 20px;
+                    font-weight: 700;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+
+        .N li:nth-child(3) {
+            img {
+                height: 38px;
+            }
+        }
+    }
 }

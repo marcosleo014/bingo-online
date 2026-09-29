@@ -34,6 +34,10 @@
     border-radius: 12px;
     box-shadow: #a3a3a3 0px 0px 20px;
 
+    p {
+        text-align: center;
+    }
+
     div {
         display: flex;
         gap: 40px;
@@ -64,3 +68,15 @@
 .blur {
     filter: blur(5px);
 }
+
+@media (width < 1280px) {
+    .btn-generate-card {
+        bottom: 15px;
+        right: 15px;
+
+        border-radius: 4px;
+        padding: 2px 5px;
+        font-weight: 600;
+        font-size: 10px;
+    }
+};
