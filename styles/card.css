@@ -1,0 +1,52 @@
+.card {
+    display: flex;
+    width: min-content;
+    margin-inline: auto;
+    margin-top: 50px;
+    background-color: #1E293B;
+
+    border: 1px solid #94A3B8;
+    border-radius: 12px;
+
+    article {
+        padding: 12px 8px 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font-size: 32px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            li {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                background-color: #FFFFFF;
+                color: #000000;
+                font-size: 36px;
+                font-weight: 800;
+                border-radius: 5px;
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+
+    .B, .I, .N, .G {
+        border-right: 1px solid #94A3B8;
+    }
+}
+
+.N li:nth-child(3) {
+    background-color: transparent;
+    object-fit: cover;
+    cursor: auto;
+}

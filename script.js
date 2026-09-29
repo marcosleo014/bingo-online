@@ -1,6 +1,7 @@
 function draw() {
     return Math.floor(Math.random() * 75 + 1);
 };
+
 function letterResult(number) {
     const position = Math.ceil(number / 15);
     let letter;
@@ -38,7 +39,6 @@ const ballHistory_3 = document.querySelector('.history li:nth-child(3)')
 const ballHistory_4 = document.querySelector('.history li:nth-child(4)')
 const ballsList = []
 
-
 drawBtn.addEventListener('click', (event) => {
     // sortear e inserir número na lista de bolas sorteadas
     if (ballsList.length === 75) {
@@ -71,3 +71,26 @@ drawBtn.addEventListener('click', (event) => {
     }
     
 });
+
+
+// ======================================================================
+
+
+const btnGenerateCard = document.querySelector('.btn-generate-card');
+const modal = document.querySelector('.confirmation-modal');
+const btnCloseModal = document.querySelector('.close-modal');
+const btnConfirm = document.querySelector('.confirmation-modal a');
+
+btnConfirm.onclick = () => {
+    modal.style.display = 'none'
+    document.querySelector('main').classList.remove('blur');
+};
+btnCloseModal.onclick = () => {
+    modal.style.display = 'none'
+    document.querySelector('main').classList.remove('blur');
+};
+btnGenerateCard.onclick = () => {
+    modal.style.display = 'flex'
+    document.querySelector('main').classList.add('blur');
+};
+
