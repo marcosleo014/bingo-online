@@ -64,6 +64,11 @@
                 transform: scale(0.98);
                 background-color: #10B981;
             }
+
+            &:disabled {
+                background-color: #424242;
+                color: #9c9c9c;
+            }
         }
     }
 
@@ -80,6 +85,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            position: relative;
 
             li {
                 width: 42px;
@@ -93,6 +99,13 @@
                 font-size: 20px;
                 font-weight: 700;
                 opacity: 0.1;
+            }
+
+            li:nth-child(5) {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
             }
         }
     }
@@ -135,6 +148,7 @@
 
         .history {
             flex-direction: row;
+            align-items: center;
             gap: 10px;
             margin-bottom: 20px;
 
@@ -147,11 +161,12 @@
 
             ul {
                 gap: 10px;
+                height: min-content;
 
                 li {
-                    width: 35px;
-                    height: 35px;
-                    font-size: 22px;
+                    width: 38px;
+                    height: 38px;
+                    font-size: 20px;
                 }
             }
         }
